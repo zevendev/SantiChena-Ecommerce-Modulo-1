@@ -1,0 +1,272 @@
+* ::before, ::after{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+*{
+padding:0;
+margin:0 ;
+box-sizing: border-box;
+}
+
+a{
+text-decoration: none;
+list-style: none;
+color: black;
+}
+
+body{
+position: relative;
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(0, 0, 0);
+min-height: 100vh;
+flex-direction: column;
+background-image:linear-gradient(to left,rgb(116, 2, 2), rgba(255, 0, 0, 0.692), purple);
+}
+
+
+/* ==================HEADER==================== */
+.main__header{
+padding-bottom:25px;
+display: flex;
+justify-content: space-between;
+align-items:center;
+height: 130px;
+background-image: url(/Assets/Banners/Pubg\ Banner\ Template__@sandy_zooming\ In\ Instagram\ ❤.jpeg);
+background-size:cover;
+background-position: center;
+}
+
+.navbarcontainer__buscar{
+transform: translate(-50%,-50%);
+padding: 10px;
+
+}
+
+input{
+outline: none;
+box-sizing: border-box;
+height: 20px;
+width: 0px;
+padding: 0 20px;
+color: black;
+border-radius: 50px;
+font-size: 20px;
+border: 2px solid black;
+transition: all 1.0s ease;
+}
+
+::placeholder{
+color: black;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+;
+}
+
+
+.button__buscar{
+position: absolute;
+right: 0;
+top: 0;
+width: 33px;
+height: 33px;
+background: black;
+line-height: 35px;
+border-radius: 50%;
+text-align: center;
+cursor: pointer;
+transform: .5s;
+}
+
+
+.button__buscar i{
+font-size: 17px;
+color: white;
+line-height: 30px;
+transition: all .9s ease;
+}
+
+.navbarcontainer__buscar:hover input{
+width: 220px;
+}
+
+.navbarcontainer__buscar :hover i{
+transform: rotate(-360deg);
+}
+
+.button__buscar hover{
+background: black;
+}
+
+
+
+
+.main-logo{
+height: 190px;
+width: 190px;
+padding-top: 25px;
+}
+
+/* CONTENEDOR DONDE ESTAN TODOS LOS LINKS */
+.nav-container{
+display: inline-block;
+color: black;
+list-style: none;
+
+}
+
+/* LISTA DE ENLACES */
+.nav-list{
+display: flex;
+padding-top: 60px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 17px; 
+
+}
+
+.nav-link{
+list-style: none;
+padding: 16px 8px;
+}
+
+
+
+/* =================CARDS=============== */
+.card-container{
+padding: 32px;
+display: flex;
+column-gap: 10px;
+height: 550px;
+
+}
+
+.card{
+width: 200px;
+font-size: 12px;
+border-radius: 6px;
+overflow: hidden;
+box-shadow: 5px 5px 5px 10px black;
+display: flex;
+flex-direction:column ;
+}
+
+
+.card:hover .card-header__image{
+transform: scale(1.2);
+}
+
+.card:hover{
+box-shadow: 8px 5px 4px black ;
+}
+
+.card-header__image{
+height: 150px;
+width:100%;
+transition:1s 
+}
+
+.card-body{
+padding: 16px 16px 16px;
+height: 300px;
+overflow: hidden;
+}
+
+.card-body__title{
+text-transform: uppercase;
+margin-bottom: 20px;
+font-size: 15px;
+text-align: center;
+
+}
+
+.card-body__description{
+height:250px ;
+overflow: auto;
+font-size: 13px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.card-footer{
+padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.card-footer__link{
+text-decoration: none;
+background-color: rgb(255, 30, 161);
+border-radius: 5px;
+padding: 8px 8px;
+color: wheat;
+box-shadow: 8px 7px 4px black ;
+}
+
+.card-footer__link:hover{
+background-color: red;
+}
+
+.card-footer__date{
+font-size: 10px;
+color: white;
+}
+
+
+/* ================FOOTER======================== */
+.footer__main{
+padding-top: 20px;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.603);
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction:column;
+}
+
+.social-media{
+font-size: 22px;
+padding: 10px 0px;
+list-style: none;
+color: white
+}
+
+.redes__container{
+flex-wrap: wrap;
+margin-bottom: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.contactos__container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-item{
+list-style: none;
+font-size: 22px;
+padding: 10px 0px;
+color: white;
+}
+
+
+
+@media screen and (max-width:800px){
+body{
+background-image:linear-gradient(to left,rgb(116, 2, 2), rgba(255, 0, 0, 0.692), purple);
+}
+}
+
+@media screen and (max-width:500px){
+body{
+background-image:linear-gradient(to left,rgb(116, 2, 2), rgba(255, 0, 0, 0.692), purple);
+}
+}
+
+
